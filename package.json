@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "node start.js"
+  },
+  "private": true
+}
