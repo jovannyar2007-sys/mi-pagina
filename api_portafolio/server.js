@@ -20,10 +20,14 @@ const productos = [];
 const adminSessions = new Map();
 const ADMIN_SESSION_TTL_MS = 8 * 60 * 60 * 1000;
 const ADMIN_SESSION_COOKIE = 'admin_session';
-const allowedOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173,http://127.0.0.1:5173')
+const configuredOrigins = (process.env.FRONTEND_URL || 'http://localhost:5173,http://127.0.0.1:5173')
     .split(',')
     .map((origin) => origin.trim())
     .filter(Boolean);
+const allowedOrigins = [...new Set([
+    ...configuredOrigins,
+    'https://proyecto-frontende-el22.vercel.app',
+])];
 
 // Prepara los datos públicos del usuario, sin incluir su contraseña.
 const usuarioPublico = (user) => ({
