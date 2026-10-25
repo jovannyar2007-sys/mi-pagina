@@ -1,5 +1,8 @@
 // Construye direcciones de la API y convierte sus respuestas JSON en datos.
-const configuredApiUrl = (import.meta.env.VITE_API_URL || '').trim().replace(/\/+$/, '');
+const productionApiUrl = 'https://api-proyecto-26c1.onrender.com';
+const configuredApiUrl = (
+  import.meta.env.VITE_API_URL || (import.meta.env.PROD ? productionApiUrl : '')
+).trim().replace(/\/+$/, '');
 const apiBaseUrl = configuredApiUrl.replace(/\/api$/i, '');
 
 export function apiUrl(path) {
