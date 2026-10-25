@@ -7,17 +7,48 @@ El repositorio contiene dos aplicaciones independientes:
 
 ## Desarrollo local
 
-1. Copia `api_portafolio/.env.example` a `api_portafolio/.env` y configura
-   `MONGODB_URL`, `ADMIN_EMAIL` y `ADMIN_PASSWORD`.
-2. Instala dependencias desde `api_portafolio` y `portafolio_frontend` con
-   `npm install`.
-3. Inicia la API con `npm run dev` desde `api_portafolio`.
-4. En otra terminal, inicia Vite con `npm run dev` desde
-   `portafolio_frontend`.
-5. Abre <http://localhost:5173>. Vite redirige `/api` al backend local.
+Requisitos: Node.js 20.19 o superior y una base de datos MongoDB accesible.
 
-También se puede ejecutar `npm run dev` desde la raíz para iniciar ambos
-servicios.
+1. Desde la raíz del repositorio, crea o abre el archivo local de configuración
+   de la API:
+
+   ```powershell
+   notepad api_portafolio\.env
+   ```
+
+2. Añade las variables siguientes y reemplaza los valores de ejemplo. No
+   compartas ni subas este archivo:
+
+   ```env
+   MONGODB_URL=<URI de conexión de MongoDB>
+   ADMIN_EMAIL=<correo del administrador>
+   ADMIN_PASSWORD=<contraseña segura>
+   FRONTEND_URL=http://localhost:5173
+   NODE_ENV=development
+   PORT=3000
+   ```
+
+   Para desarrollo local, deja `VITE_API_URL` sin configurar o vacío para que
+   Vite use el proxy local. El archivo
+   `portafolio_frontend/.env.example` muestra la URL de la API publicada.
+3. Instala las dependencias de ambos servicios (solo la primera vez o cuando
+   cambien sus archivos de dependencias):
+
+   ```powershell
+   npm ci --prefix api_portafolio
+   npm ci --prefix portafolio_frontend
+   ```
+
+4. Desde la raíz, inicia ambos servicios juntos:
+
+   ```powershell
+   npm run dev
+   ```
+
+5. Abre <http://localhost:5173>. En desarrollo, deja `VITE_API_URL` vacío en
+   `portafolio_frontend/.env` si creas ese archivo; Vite redirige las
+   solicitudes `/api` al backend local en el puerto 3000. La API también ofrece
+   el chequeo de estado en <http://localhost:3000/healthz>.
 
 ## Despliegue del backend en Render
 
