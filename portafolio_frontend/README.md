@@ -11,7 +11,8 @@ Interfaz React + Vite del portafolio profesional. Consulta el
 
 En local, Vite redirige las solicitudes `/api` a
 `http://127.0.0.1:3000`. Para conectarse directamente a una API remota, define
-`VITE_API_URL` con el origen del backend, sin `/api` al final.
+`VITE_API_URL` con el origen del backend. Tambien acepta la URL con `/api` al
+final y evita duplicar ese segmento en las rutas.
 
 El inicio de sesión de administración usa una cookie `HttpOnly`. En producción
 la API requiere el origen de Vercel en su variable `FRONTEND_URL` y configura la

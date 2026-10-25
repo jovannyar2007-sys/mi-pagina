@@ -1,3 +1,4 @@
+// Muestra el formulario de contacto y conserva comentarios en este navegador.
 import { useEffect, useState } from 'react';
 import SectionTitle from './SectionTitle';
 

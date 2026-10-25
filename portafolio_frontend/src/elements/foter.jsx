@@ -1,3 +1,4 @@
+// Componente alternativo de pie de pagina con datos de contacto y redes.
 function Copy() {
   return (
     <footer className="site-footer">

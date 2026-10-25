@@ -1,3 +1,4 @@
+// Ejemplo de boton interactivo para activar o quitar un "me gusta".
 import { useState } from 'react';
 
 function Like() {

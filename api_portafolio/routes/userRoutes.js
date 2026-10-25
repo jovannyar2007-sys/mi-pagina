@@ -1,3 +1,4 @@
+// Define las rutas para crear usuarios, iniciar sesion y consultarlos.
 const express = require('express');
 const {
     crearUsuario,

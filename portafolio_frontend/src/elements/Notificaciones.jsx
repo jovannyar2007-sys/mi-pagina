@@ -1,3 +1,4 @@
+// Muestra un aviso cuando hay mensajes nuevos sin leer.
 function Mensaje({mensajesNuevos}) {
     return (
         <div>

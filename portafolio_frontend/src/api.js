@@ -1,4 +1,6 @@
-const apiBaseUrl = (import.meta.env.VITE_API_URL || '').replace(/\/+$/, '');
+// Construye direcciones de la API y convierte sus respuestas JSON en datos.
+const configuredApiUrl = (import.meta.env.VITE_API_URL || '').trim().replace(/\/+$/, '');
+const apiBaseUrl = configuredApiUrl.replace(/\/api$/i, '');
 
 export function apiUrl(path) {
   return `${apiBaseUrl}${path.startsWith('/') ? path : `/${path}`}`;

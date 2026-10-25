@@ -1,3 +1,4 @@
+// Define los campos y reglas de validacion de los proyectos en MongoDB.
 const mongoose = require('mongoose');
 
 const projectSchema = new mongoose.Schema({

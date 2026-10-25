@@ -1,3 +1,4 @@
+// Alterna el estado de "me gusta" y actualiza el texto del boton.
 import { useState } from 'react';
 
 function LikeToggle() {

@@ -1,3 +1,4 @@
+// Ensambla las rutas Express generales bajo el prefijo /api.
 const express = require('express');
 const userRoutes = require('./routes/userRoutes');
 const generalRoutes = require('./routes/generalRoutes');

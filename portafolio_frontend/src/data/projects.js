@@ -1,3 +1,4 @@
+// Contiene proyectos de ejemplo que se muestran junto con los guardados en la API.
 export const projects = [
   {
     id: 1,

@@ -1,3 +1,4 @@
+// Encabezado sencillo que muestra un saludo personalizado.
 function Header({ nombre = 'Jovanny' }) {
   return (
     <header className="site-header">

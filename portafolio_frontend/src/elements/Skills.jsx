@@ -1,3 +1,4 @@
+// Presenta una tarjeta por cada habilidad recibida.
 import SectionTitle from './SectionTitle';
 import SkillCard from './SkillCard';
 

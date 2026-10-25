@@ -1,3 +1,4 @@
+// Campo de busqueda que comunica los cambios al componente padre.
 function SearchBar({ value, onChange }) {
   return (
     <label className="search-bar" aria-label="Buscar contenido">

@@ -1,3 +1,4 @@
+// Consulta la API publica de GitHub y muestra repositorios del usuario.
 import { useState, useEffect } from 'react';
 
 function ListaGit() {

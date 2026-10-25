@@ -1,3 +1,4 @@
+// Asocia la ruta de comentarios con su controlador.
 const express = require('express');
 const { obtenerComentarios } = require('../controllers/commentController');
 

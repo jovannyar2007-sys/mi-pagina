@@ -1,3 +1,4 @@
+// Presenta la informacion personal en la seccion "Sobre mi".
 import SectionTitle from './SectionTitle';
 
 function About() {

@@ -1,3 +1,4 @@
+// Presenta la marca del portafolio y el buscador de contenido.
 import SearchBar from './SearchBar';
 
 function Header({ search, onSearchChange }) {

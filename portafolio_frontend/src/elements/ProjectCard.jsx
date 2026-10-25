@@ -1,3 +1,4 @@
+// Presenta los datos de un proyecto en una tarjeta individual.
 function ProjectCard({ title, description, tags, url }) {
   return (
     <article className="project-card">

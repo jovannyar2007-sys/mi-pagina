@@ -1,3 +1,4 @@
+// Muestra la navegacion lateral y permite cambiar entre secciones.
 import { navigation } from '../data/navigation';
 
 function Navbar({

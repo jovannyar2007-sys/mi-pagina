@@ -1,3 +1,4 @@
+// Presenta el mensaje principal y el perfil profesional del portafolio.
 function Hero() {
   return (
     <section id="inicio" className="section hero-section">

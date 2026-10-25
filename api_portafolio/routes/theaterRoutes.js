@@ -1,3 +1,4 @@
+// Define el endpoint para consultar cines.
 const express = require('express');
 const { obtenerCines } = require('../controllers/theaterController');
 

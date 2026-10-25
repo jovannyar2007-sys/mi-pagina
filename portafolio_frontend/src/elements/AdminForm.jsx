@@ -1,3 +1,4 @@
+// Permite iniciar sesion y administrar proyectos guardados en el backend.
 import { useEffect, useState } from 'react';
 import SectionTitle from './SectionTitle';
 import { apiUrl, readApiJson } from '../api';

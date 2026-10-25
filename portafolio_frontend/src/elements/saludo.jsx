@@ -1,3 +1,4 @@
+// Ejemplo de inicio y cierre de sesion con un estado local.
 import { useState } from 'react';
 
 function Saludo() {

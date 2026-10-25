@@ -1,3 +1,4 @@
+// Agrupa controles de bienvenida, notificaciones y "me gusta".
 import NotificationBadge from './NotificationBadge';
 import LikeToggle from './LikeToggle';
 

@@ -1,3 +1,4 @@
+// Mantiene el mismo formato para los titulos de las secciones.
 function SectionTitle({ eyebrow, title, align = 'left' }) {
   return (
     <div className={`section-title ${align === 'center' ? 'center' : ''}`}>

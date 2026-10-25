@@ -1,3 +1,4 @@
+// Define el endpoint para consultar peliculas.
 const express = require('express');
 const { obtenerPeliculas } = require('../controllers/movieController');
 

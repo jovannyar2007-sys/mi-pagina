@@ -1,3 +1,4 @@
+// Muestra los datos de contacto y enlaces sociales al final de la pagina.
 function Footer() {
   return (
     <footer className="site-footer">

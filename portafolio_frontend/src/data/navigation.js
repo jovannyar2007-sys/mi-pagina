@@ -1,3 +1,4 @@
+// Define las secciones disponibles en el menu de navegacion.
 export const navigation = [
   { id: 'inicio', label: 'Inicio' },
   { id: 'sobre-mi', label: 'Sobre mí' },

@@ -1,3 +1,4 @@
+// Recorre una lista de proyectos y muestra una tarjeta para cada uno.
 import SectionTitle from './SectionTitle';
 import ProjectCard from './ProjectCard';
 

@@ -1,3 +1,4 @@
+// Desplaza la pagina suavemente al inicio cuando se monta el componente.
 import { useEffect } from 'react';
 
 function ScrollToTop() {

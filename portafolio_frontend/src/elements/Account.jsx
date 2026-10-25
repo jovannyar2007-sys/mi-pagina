@@ -1,3 +1,4 @@
+// Gestiona el acceso de usuario y muestra catalogos disponibles desde la API.
 import { useEffect, useState } from 'react';
 import { apiUrl, readApiJson } from '../api';
 

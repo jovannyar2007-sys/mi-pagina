@@ -1,3 +1,4 @@
+// Agrupa rutas sencillas de saludo, PIN y guardado de productos.
 const express = require('express');
 const {
     saludo,
